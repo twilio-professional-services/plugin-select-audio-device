@@ -1,46 +1,30 @@
-# Your custom Twilio Flex Plugin
+# plugin-select-audio-device
 
-Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
+This a twilio Flex plugin that is intended to demonstrate how to use web APIs to select audio devices and apply them for use within Flex.  
 
-## Setup
+There are two notable areas where this is seperately applied.
 
-Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com) installed.
+1.  For use with the voice client (fully demonstrated)
+2.  For playback of any custom sounds such as whispers when a task comes in (this is discussed but not demonstrated in full)
 
-Afterwards, install the dependencies by running `npm install`:
+# screenshot
 
-```bash
-cd 
+![alt text](https://github.com/jhunter-twilio/plugin-select-audio-device/blob/master/screenshot/2019-10-10%2017.15.13.gif?raw=true)
 
-# If you use npm
-npm install
-```
+# use
+1. Create a clone of this repository
+2. create your own public/appConfig.js based on the public/appConfig.example.js and include your own account number
+3. run npm install
+5. run npm start
 
-## Development
+# change log
 
-In order to develop locally, you can use the Webpack Dev Server by running:
+v1.0 - initial release
 
-```bash
-npm start
-```
+## Code of Conduct
 
-This will automatically start up the Webpack Dev Server and open the browser for you. Your app will run on `http://localhost:8080`. If you want to change that you can do this by setting the `PORT` environment variable:
+Please be aware that this project has a [Code of Conduct](https://github.com/twilio-labs/.github/blob/master/CODE_OF_CONDUCT.md). The tldr; is to just be excellent to each other ❤️
 
-```bash
-PORT=3000 npm start
-```
+# TODOs
 
-When you make changes to your code, the browser window will be automatically refreshed.
-
-## Deploy
-
-Once you are happy with your plugin, you have to bundle it in order to deploy it to Twilio Flex.
-
-Run the following command to start the bundling:
-
-```bash
-npm run build
-```
-
-Afterwards, you'll find in your project a `build/` folder that contains a file with the name of your plugin project. For example, `plugin-example.js`. Take this file and upload it into the Assets part of your Twilio Runtime.
-
-Note: Common packages like `React`, `ReactDOM`, `Redux` and `ReactRedux` are not bundled with the build because they are treated as external dependencies so the plugin will depend on Flex to provide them globally.
+1. add redux store so output device ID can be used whenever playing a sound.
