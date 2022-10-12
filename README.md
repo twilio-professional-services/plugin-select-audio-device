@@ -1,5 +1,11 @@
 # plugin-select-audio-device
 
+## Notice
+
+this plugin is no longer maintained as of Oct 12th 2022.  Work to support this feature in flex v2 has been transitioned over [here](https://github.com/twilio-professional-services/flex-project-template/tree/main/plugin-flex-ts-template-v2/src/feature-library/device-manager)
+
+----
+
 This a twilio Flex plugin that is intended to demonstrate how to use web APIs to select audio devices and apply them for use within Flex.  
 
 There are two notable areas where this is seperately applied.
