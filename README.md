@@ -1,8 +1,8 @@
+# Notice - Legacy Code
+
+**This plugin is no longer maintained, as it is now available as an out-of-box feature. An updated version of the plugin is also available as part of the customizable [Flex Project Template](https://github.com/twilio-professional-services/flex-project-template), where it is an optional feature.**
+
 # plugin-select-audio-device
-
-## Notice
-
-this plugin is no longer maintained as of Oct 12th 2022.  Work to support this feature in flex v2 has been transitioned over [here](https://github.com/twilio-professional-services/flex-project-template/tree/main/plugin-flex-ts-template-v2/src/feature-library/device-manager)
 
 ----
 
@@ -15,7 +15,7 @@ There are two notable areas where this is seperately applied.
 
 # screenshot
 
-![alt text](https://github.com/jhunter-twilio/plugin-select-audio-device/blob/master/screenshot/2019-10-10%2017.15.13.gif?raw=true)
+![alt text](https://github.com/twilio-professional-services/plugin-select-audio-device/blob/master/screenshot/2019-10-10%2017.15.13.gif?raw=true)
 
 # use
 1. Create a clone of this repository
